@@ -1,10 +1,10 @@
 ﻿namespace Models
 {
-    public enum SkillLevel : int
+    public enum PremiumLevel : int
     {
         None = 0,
-        Beginner = 1,
+        Basic = 1,
         Intermediary = 2,
-        Advanced = 3
+        Full = 3
     }
 }
