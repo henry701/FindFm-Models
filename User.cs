@@ -14,6 +14,8 @@ namespace Models
         public string Email { get; set; }
         public byte[] Password { get; set; }
 
+        public ObjectId ImageReference { get; set; }
+
         public string Name { get; set; }
 
         public bool IsConfirmed { get; set; }
@@ -23,6 +25,6 @@ namespace Models
         public GeoJsonPoint<GeoJson2DGeographicCoordinates> LastPosition { get; set; }
         public IPAddress LastIp { get; set; }
 
-        public String Kind { get { return this.GetType().Name; } }
+        public string Kind { get { return this.GetType().Name; } }
     }
 }
