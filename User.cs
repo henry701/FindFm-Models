@@ -6,6 +6,7 @@ using MongoDB.Driver.GeoJsonObjectModel;
 
 namespace Models
 {
+    [BsonKnownTypes(typeof(Musician))] // TODO: Expand
     public abstract class User : IIdentifiable
     {
         [BsonId]
@@ -14,7 +15,7 @@ namespace Models
         public string Email { get; set; }
         public byte[] Password { get; set; }
 
-        public ObjectId ImageReference { get; set; }
+        public string ImageReference { get; set; }
 
         public string Name { get; set; }
 
