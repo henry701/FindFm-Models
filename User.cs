@@ -7,15 +7,12 @@ using MongoDB.Driver.GeoJsonObjectModel;
 namespace Models
 {
     [BsonKnownTypes(typeof(Musician))] // TODO: Expand
-    public abstract class User : IIdentifiable<ObjectId>
+    public abstract class User : BaseEntity<ObjectId>
     {
-        [BsonId]
-        public ObjectId _id { get; set; }
-
         public string Email { get; set; }
         public byte[] Password { get; set; }
 
-        public string ImageReference { get; set; }
+        public ImageReference Avatar { get; set; }
 
         public string Name { get; set; }
 
@@ -23,8 +20,8 @@ namespace Models
 
         public PremiumLevel PremiumLevel { get; set; }
 
-        public GeoJsonPoint<GeoJson2DGeographicCoordinates> LastPosition { get; set; }
-        public IPAddress LastIp { get; set; }
+        public TrackedEntity<GeoJsonPoint<GeoJson2DGeographicCoordinates>> Position { get; set; }
+        public TrackedEntity<IPAddress> Ip { get; set; }
 
         public string Kind { get { return this.GetType().Name; } }
     }

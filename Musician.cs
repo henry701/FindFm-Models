@@ -8,6 +8,6 @@ namespace Models
     public class Musician : User
     {
         public DateTime Born { get; set; }
-        public IList<Instrument> Instruments { get; set; }
+        public IDictionary<Skill, SkillLevel> InstrumentSkills { get; set; }
     }
 }

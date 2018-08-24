@@ -6,9 +6,9 @@ namespace Models
     /// <summary>
     /// Base interface for all models that have IDs, so that they can be referred to dynamically.
     /// </summary>
-    public interface IIdentifiable<T>
+    public interface IIdentifiable<TIdentifier>
     {
         [BsonId]
-        T _id { get; }
+        TIdentifier _id { get; }
     }
 }
