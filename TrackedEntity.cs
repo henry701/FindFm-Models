@@ -32,14 +32,14 @@ namespace Models
             ModifiedDate = DateTime.UtcNow;
         }
 
-        public static TrackedEntity<IPAddress> From (IPAddress ipAddress, DateTime creationDate)
+        public static TrackedEntity<TEntity> From(TEntity entity)
         {
-            return null;
+            return new TrackedEntity<TEntity>(entity);
         }
 
-        public static TrackedEntity<GeoJsonPoint<GeoJson2DGeographicCoordinates>> From ( DateTime creationDate)
+        public static TrackedEntity<TEntity> From(TEntity entity, DateTime dateTime)
         {
-            return null;
+            return new TrackedEntity<TEntity>(entity, dateTime);
         }
     }
 }
