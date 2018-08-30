@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MongoDB.Driver.GeoJsonObjectModel;
+using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Text;
 
 namespace Models
@@ -28,6 +30,16 @@ namespace Models
         {
             _entity = entity;
             ModifiedDate = DateTime.UtcNow;
+        }
+
+        public static TrackedEntity<IPAddress> From (IPAddress ipAddress, DateTime creationDate)
+        {
+            return null;
+        }
+
+        public static TrackedEntity<GeoJsonPoint<GeoJson2DGeographicCoordinates>> From ( DateTime creationDate)
+        {
+            return null;
         }
     }
 }

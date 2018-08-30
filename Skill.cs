@@ -13,5 +13,6 @@
         Trombone = 8,
         Violin = 9,
         ElectricGuitar = 10,
+        Flute = 11
     }
 }
