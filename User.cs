@@ -13,15 +13,15 @@ namespace Models
         public string FullName { get; set; }
         public string Email { get; set; }
         public byte[] Password { get; set; }
-        public string Phone { get; set; }
+        public PhoneNumber Phone { get; set; }
 
         public ImageReference Avatar { get; set; }
+
+        public Address Address { get; set; }
            
         public bool IsConfirmed { get; set; }
 
         public PremiumLevel PremiumLevel { get; set; }
-
-        public PhoneNumber Phone { get; set; }
 
         public TrackedEntity<GeoJsonPoint<GeoJson2DGeographicCoordinates>> Position { get; set; }
         public TrackedEntity<IPAddress> Ip { get; set; }

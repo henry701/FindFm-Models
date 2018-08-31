@@ -9,7 +9,6 @@ namespace Models
     {
         public DateTime Born { get; set; }
         public string City { get; set; }
-        public string UF { get; set; }
         public IDictionary<Skill, SkillLevel> InstrumentSkills { get; set; }
     }
 }
