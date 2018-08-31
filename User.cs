@@ -6,7 +6,7 @@ using MongoDB.Driver.GeoJsonObjectModel;
 
 namespace Models
 {
-    [BsonKnownTypes(typeof(Musician))] // TODO: Expand
+    [BsonKnownTypes(typeof(Musician))]
     public abstract class User : BaseEntity<ObjectId>
     {
         public string UserName { get; set; }
@@ -21,9 +21,11 @@ namespace Models
 
         public PremiumLevel PremiumLevel { get; set; }
 
+        public PhoneNumber Phone { get; set; }
+
         public TrackedEntity<GeoJsonPoint<GeoJson2DGeographicCoordinates>> Position { get; set; }
         public TrackedEntity<IPAddress> Ip { get; set; }
 
-        public string Kind { get { return this.GetType().Name; } }
+        public string Kind { get { return GetType().Name; } }
     }
 }
