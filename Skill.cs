@@ -25,6 +25,7 @@ namespace Models
         Violin = 9,
         [Display(Name = "Guitarra")]
         ElectricGuitar = 10,
+        [Display(Name = "Flauta")]
         Flute = 11
     }
 }
