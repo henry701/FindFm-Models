@@ -3,6 +3,7 @@
     /// <summary>
     /// Class for e-mail confirmation of a <see cref="Models.User"/>.
     /// </summary>
+    [RootEntity]
     public class Confirmation : BaseEntity<string>
     {
         /// <summary>

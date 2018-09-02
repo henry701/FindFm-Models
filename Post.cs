@@ -8,6 +8,7 @@ using MongoDB.Driver.GeoJsonObjectModel;
 
 namespace Models
 {
+    [RootEntity]
     public class Post : BaseEntity<ObjectId>, ILikeAware
     {
         public User Poster { get; set; }
