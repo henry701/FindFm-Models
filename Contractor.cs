@@ -7,8 +7,8 @@ using MongoDB.Driver.GeoJsonObjectModel;
 
 namespace Models
 {
-    public class Musician : User
+    public class Contractor : User
     {
-        public ISet<KeyValuePair<Skill, SkillLevel>> InstrumentSkills { get; set; }
+        // TODO: Coisas específicas de contratante
     }
 }
