@@ -9,6 +9,6 @@ namespace Models
 {
     public class Contractor : User
     {
-        // TODO: Coisas específicas de contratante
+        // TODO: Contractor-specific data
     }
 }

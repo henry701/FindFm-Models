@@ -2,7 +2,7 @@
 
 namespace Models
 {
-    public class Address : BaseEntity<string>
+    public class Address
     {
         [Display(Name = "Tipo de Bairro")]
         public DistrictKind DistrictKind { get; set; }

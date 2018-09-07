@@ -9,7 +9,7 @@ namespace Models
     [BsonDiscriminator(RootClass = true)]
     [BsonKnownTypes(typeof(Musician))]
     [RootEntity]
-    public abstract class User : BaseEntity<ObjectId>
+    public abstract class User : BaseEntity
     {
         public string UserName { get; set; }
         public string FullName { get; set; }

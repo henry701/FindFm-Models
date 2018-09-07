@@ -10,4 +10,9 @@ namespace Models
         public TIdentifier _id { get; set; }
         public DateTime? DeactivationDate { get; set; }
     }
+
+    public class BaseEntity : BaseEntity<ObjectId>
+    {
+        // Default is ObjectId entity
+    }
 }
