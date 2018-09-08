@@ -4,6 +4,6 @@
     {
         public PhoneCountry CountryCode;
         public PhoneRegion StateCode;
-        public ulong Number;
+        public string Number;
     }
 }
