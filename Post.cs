@@ -12,6 +12,7 @@ namespace Models
         public GeoJsonPoint<GeoJson2DGeographicCoordinates> Position { get; set; }
         public IPAddress Ip { get; set; }
 
+        public string Title { get; set; }
         public string Text { get; set; }
         public MediaReference MediaReference { get; set; }
         public List<Comment> Comments { get; set; }
