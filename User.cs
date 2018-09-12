@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Net;
-using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver.GeoJsonObjectModel;
 

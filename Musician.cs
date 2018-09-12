@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using MongoDB.Bson.Serialization.Attributes;
-using MongoDB.Bson.Serialization.Serializers;
-using MongoDB.Driver.GeoJsonObjectModel;
+﻿using System.Collections.Generic;
 
 namespace Models
 {
