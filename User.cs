@@ -22,7 +22,7 @@ namespace Models
 
         public Address Address { get; set; }
            
-        public bool IsConfirmed { get; set; }
+        public bool EmailConfirmed { get; set; }
 
         public PremiumLevel PremiumLevel { get; set; }
 
