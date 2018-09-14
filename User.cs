@@ -7,6 +7,7 @@ namespace Models
 {
     [BsonDiscriminator(RootClass = true)]
     [BsonKnownTypes(typeof(Musician))]
+    [BsonKnownTypes(typeof(Contractor))]
     [RootEntity]
     public abstract class User : BaseEntity
     {
