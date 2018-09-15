@@ -6,8 +6,7 @@ using MongoDB.Driver.GeoJsonObjectModel;
 namespace Models
 {
     [BsonDiscriminator(RootClass = true)]
-    [BsonKnownTypes(typeof(Musician))]
-    [BsonKnownTypes(typeof(Contractor))]
+    [BsonKnownTypes(typeof(Musician), typeof(Contractor))]
     [RootEntity]
     public abstract class User : BaseEntity
     {
