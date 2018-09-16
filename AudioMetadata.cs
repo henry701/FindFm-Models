@@ -2,18 +2,18 @@
 
 namespace Models
 {
-    internal class AudioMetadata : MediaMetadata
+    internal class AudioMetadata : FileMetadata
     {
-        public override MediaType MediaType
+        public override FileType FileType
         {
-            get => base.MediaType;
+            get => base.FileType;
             set
             {
-                if (value != MediaType.Audio)
+                if (value != FileType.Audio)
                 {
                     throw new InvalidOperationException();
                 }
-                base.MediaType = value;
+                base.FileType = value;
             }
         }
 
@@ -22,9 +22,9 @@ namespace Models
 
         }
 
-        public AudioMetadata(MediaMetadata value)
+        public AudioMetadata(FileMetadata value)
         {
-            MediaType = value.MediaType;
+            FileType = value.FileType;
             ContentType = value.ContentType;
         }
     }

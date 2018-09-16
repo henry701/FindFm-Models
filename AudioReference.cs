@@ -1,7 +1,7 @@
 ﻿namespace Models
 {
-    public class AudioReference : MediaReference
+    public class AudioReference : FileReference
     {
-        public override MediaMetadata MediaMetadata { get => base.MediaMetadata; set => base.MediaMetadata = new AudioMetadata(value); }
+        public override FileMetadata FileMetadata { get => base.FileMetadata; set => base.FileMetadata = new AudioMetadata(value); }
     }
 }

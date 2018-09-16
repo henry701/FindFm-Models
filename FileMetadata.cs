@@ -1,8 +1,8 @@
 ﻿namespace Models
 {
-    public class MediaMetadata
+    public class FileMetadata
     {
         public virtual string ContentType { get; set; }
-        public virtual MediaType MediaType { get; set; }
+        public virtual FileType FileType { get; set; }
     }
 }

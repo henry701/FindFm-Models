@@ -2,18 +2,18 @@
 
 namespace Models
 {
-    public class ImageMetadata : MediaMetadata
+    public class ImageMetadata : FileMetadata
     {
-        public override MediaType MediaType
+        public override FileType FileType
         {
-            get => base.MediaType;
+            get => base.FileType;
             set
             {
-                if (value != MediaType.Image)
+                if (value != FileType.Image)
                 {
                     throw new InvalidOperationException();
                 }
-                base.MediaType = value;
+                base.FileType = value;
             }
         }
 
@@ -22,9 +22,9 @@ namespace Models
 
         }
 
-        public ImageMetadata(MediaMetadata value)
+        public ImageMetadata(FileMetadata value)
         {
-            MediaType = value.MediaType;
+            FileType = value.FileType;
             ContentType = value.ContentType;
         }
     }

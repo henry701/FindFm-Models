@@ -2,7 +2,7 @@
 
 namespace Models
 {
-    public enum MediaType : int
+    public enum FileType : int
     {
         [Display(Name = "Imagem")]
         Image = 0,

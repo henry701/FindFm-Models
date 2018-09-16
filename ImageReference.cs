@@ -1,7 +1,7 @@
 ﻿namespace Models
 {
-    public class ImageReference : MediaReference
+    public class ImageReference : FileReference
     {
-        public override MediaMetadata MediaMetadata { get => base.MediaMetadata; set => base.MediaMetadata = new ImageMetadata(value); }
+        public override FileMetadata FileMetadata { get => base.FileMetadata; set => base.FileMetadata = new ImageMetadata(value); }
     }
 }

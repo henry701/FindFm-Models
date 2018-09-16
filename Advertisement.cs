@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Models
+﻿namespace Models
 {
     [RootEntity]
     public class Advertisement : BaseEntity
@@ -10,6 +6,6 @@ namespace Models
         public Contractor Poster { get; set; }
         public string Title { get; set; }
         public string Text { get; set; }
-        public MediaReference MediaReference { get; set; }
+        public FileReference FileReference { get; set; }
     }
 }

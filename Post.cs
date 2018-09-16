@@ -14,7 +14,7 @@ namespace Models
 
         public string Title { get; set; }
         public string Text { get; set; }
-        public IList<MediaReference> MediaReferences { get; set; }
+        public IList<FileReference> FileReferences { get; set; }
         public IList<Comment> Comments { get; set; }
 
         public uint Likes { get; set; }
