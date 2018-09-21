@@ -1,15 +1,20 @@
-﻿namespace Models
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
+namespace Models
 {
     /// <summary>
-    /// Class for e-mail referencing of a <see cref="Models.User"/>.
+    /// Class for correlation referencing of a <see cref="Models.User"/>.
     /// </summary>
     [RootEntity]
+    [BsonDiscriminator(RootClass = true)]
+    [BsonKnownTypes(typeof(DataReferenceToken<>))]
     public class ReferenceToken : BaseEntity<string>
     {
         /// <summary>
-        /// The user which the token references.
+        /// The user ID for the user which the token references.
         /// </summary>
-        public User User { get; set; }
+        public ObjectId UserId { get; set; }
 
         /// <summary>
         /// The type of operation this token references.
