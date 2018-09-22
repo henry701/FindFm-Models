@@ -7,8 +7,7 @@ namespace Models
     /// Class for correlation referencing of a <see cref="Models.User"/>.
     /// </summary>
     [RootEntity]
-    [BsonDiscriminator(RootClass = true)]
-    [BsonKnownTypes(typeof(DataReferenceToken<>))]
+    [BsonDiscriminator(RootClass = true, Required = false)]
     public class ReferenceToken : BaseEntity<string>
     {
         /// <summary>
