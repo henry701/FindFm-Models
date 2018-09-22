@@ -8,7 +8,7 @@ namespace Models
     public class Post : BaseEntity, ILikeAware
     {
         public User Poster { get; set; }
-
+        public System.DateTime date { get; set; }
         public GeoJsonPoint<GeoJson2DGeographicCoordinates> Position { get; set; }
         public IPAddress Ip { get; set; }
 
