@@ -15,7 +15,7 @@ namespace Models
         public byte[] Password { get; set; }
         public PhoneNumber Phone { get; set; }
 
-        public DateTime StartDate { get; set; }
+        public DateTime? StartDate { get; set; }
 
         public ImageReference Avatar { get; set; }
 
