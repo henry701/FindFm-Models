@@ -2,7 +2,7 @@
 
 namespace Models
 {
-    internal class AudioMetadata : FileMetadata
+    public class AudioMetadata : FileMetadata
     {
         public override FileType FileType
         {
