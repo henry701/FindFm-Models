@@ -10,8 +10,6 @@
 
         public uint DurationSeconds { get; set; }
 
-        public uint Bitrate { get; set; }
-
         public uint TimesPlayed { get; set; }
         public uint TimesPlayedRadio { get; set; }
     }
