@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Net;
+using MongoDB.Bson;
 using MongoDB.Driver.GeoJsonObjectModel;
 
 namespace Models
@@ -17,6 +18,7 @@ namespace Models
         public IList<FileReference> FileReferences { get; set; }
 
         public IList<Comment> Comments { get; set; }
-        public uint Likes { get; set; }
+        
+        public ISet<ObjectId> Likes { get; set; }
     }
 }

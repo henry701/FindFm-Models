@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson;
+﻿using System.Collections.Generic;
+using MongoDB.Bson;
 
 namespace Models
 {
@@ -6,6 +7,6 @@ namespace Models
     {
         public User Commenter { get; set; }
         public string Text { get; set; }
-        public uint Likes { get; set; }
+        public ISet<ObjectId> Likes { get; set; }
     }
 }
