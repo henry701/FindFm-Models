@@ -26,6 +26,24 @@ namespace Models
         [Display(Name = "Guitarra")]
         ElectricGuitar = 10,
         [Display(Name = "Flauta")]
-        Flute = 11
+        Flute = 11,
+        [Display(Name = "Violoncelo")]
+        Cello = 12,
+        [Display(Name = "Triângulo")]
+        Triangle = 13,
+        [Display(Name = "Acordião")]
+        Acordion,
+        [Display(Name = "Trompeta")]
+        Trumpet,
+        [Display(Name = "Harpa")]
+        Harp,
+        [Display(Name = "BeatBox")]
+        BeatBox,
+        [Display(Name = "Ukele")]
+        Ukele,
+        [Display(Name = "Bongo")]
+        Bongo,
+        [Display(Name = "Órgão")]
+        Organ,
     }
 }

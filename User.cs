@@ -25,6 +25,8 @@ namespace Models
 
         public PremiumLevel PremiumLevel { get; set; }
 
+        public string About { get; set; }
+
         public TrackedEntity<GeoJsonPoint<GeoJson2DGeographicCoordinates>> Position { get; set; }
         public TrackedEntity<IPAddress> Ip { get; set; }
 
