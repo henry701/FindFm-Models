@@ -5,6 +5,7 @@ namespace Models
     public class Work : BaseEntity
     {
         public string Name { get; set; }
+        public string Description { get; set; }
         public bool Original { get; set; }
         public ISet<FileReference> FileReferences { get; set; }
         public ISet<Musician> RelatedMusicians { get; set; }
