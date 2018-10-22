@@ -8,6 +8,7 @@ namespace Models
         public string Description { get; set; }
         public bool Original { get; set; }
         public ISet<FileReference> FileReferences { get; set; }
+        public ISet<Song> Songs { get; set; }
         public ISet<Musician> RelatedMusicians { get; set; }
     }
 }
