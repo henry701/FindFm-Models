@@ -3,7 +3,7 @@
     public class Song : BaseEntity
     {
         public string Name { get; set; }
-        public AudioReference AudioReference { get; set; }
+        public FileReference AudioReference { get; set; }
 
         public bool Original { get; set; }
         public bool RadioAuthorized { get; set; }

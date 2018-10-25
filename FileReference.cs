@@ -4,6 +4,6 @@ namespace Models
 {
     public class FileReference : BaseEntity<ObjectId>
     {
-        public virtual FileMetadata FileMetadata { get; set; }
+        public virtual FileInfo FileInfo { get; set; }
     }
 }

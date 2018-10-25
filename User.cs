@@ -17,7 +17,7 @@ namespace Models
 
         public DateTime? StartDate { get; set; }
 
-        public ImageReference Avatar { get; set; }
+        public FileReference Avatar { get; set; }
 
         public Address Address { get; set; }
            
@@ -27,8 +27,8 @@ namespace Models
 
         public string About { get; set; }
 
-        public ulong FileBytesOccupied { get; set; }
-        public ulong FileBytesLimit { get; set; }
+        public long FileBytesOccupied { get; set; }
+        public long FileBytesLimit { get; set; }
 
         public TrackedEntity<GeoJsonPoint<GeoJson2DGeographicCoordinates>> Position { get; set; }
         public TrackedEntity<IPAddress> Ip { get; set; }
