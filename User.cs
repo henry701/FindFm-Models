@@ -27,6 +27,9 @@ namespace Models
 
         public string About { get; set; }
 
+        public ulong FileBytesOccupied { get; set; }
+        public ulong FileBytesLimit { get; set; }
+
         public TrackedEntity<GeoJsonPoint<GeoJson2DGeographicCoordinates>> Position { get; set; }
         public TrackedEntity<IPAddress> Ip { get; set; }
 
