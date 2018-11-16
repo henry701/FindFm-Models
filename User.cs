@@ -8,7 +8,7 @@ namespace Models
     [BsonDiscriminator(RootClass = true)]
     [BsonKnownTypes(typeof(Musician), typeof(Contractor))]
     [RootEntity]
-    public abstract class User : BaseEntity
+    public abstract class User : BaseEntity, ILocatable
     {
         public string FullName { get; set; }
         public string Email { get; set; }
@@ -30,7 +30,9 @@ namespace Models
         public long FileBytesOccupied { get; set; }
         public long FileBytesLimit { get; set; }
 
-        public TrackedEntity<GeoJsonPoint<GeoJson2DGeographicCoordinates>> Position { get; set; }
+        public GeoJsonPoint<GeoJson3DGeographicCoordinates> Position { get { return TrackedPosition?.Entity; } }
+        public TrackedEntity<GeoJsonPoint<GeoJson3DGeographicCoordinates>> TrackedPosition { get; set; }
+
         public TrackedEntity<IPAddress> Ip { get; set; }
 
         public string Kind { get { return GetType().Name; } }

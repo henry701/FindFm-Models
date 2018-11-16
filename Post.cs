@@ -6,11 +6,11 @@ using MongoDB.Driver.GeoJsonObjectModel;
 namespace Models
 {
     [RootEntity]
-    public class Post : BaseEntity, ILikeAware
+    public class Post : BaseEntity, ILikeAware, ILocatable
     {
         public User Poster { get; set; }
 
-        public GeoJsonPoint<GeoJson2DGeographicCoordinates> Position { get; set; }
+        public GeoJsonPoint<GeoJson3DGeographicCoordinates> Position { get; set; }
         public IPAddress Ip { get; set; }
 
         public string Title { get; set; }
