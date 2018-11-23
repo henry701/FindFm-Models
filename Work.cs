@@ -7,8 +7,8 @@ namespace Models
         public string Name { get; set; }
         public string Description { get; set; }
         public bool Original { get; set; }
-        public ISet<FileReference> FileReferences { get; set; }
-        public ISet<Song> Songs { get; set; }
-        public ISet<Musician> RelatedMusicians { get; set; }
+        public IList<FileReference> FileReferences { get; set; }
+        public IList<Song> Songs { get; set; }
+        public IList<User> RelatedMusicians { get; set; }
     }
 }

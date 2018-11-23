@@ -36,5 +36,7 @@ namespace Models
         public TrackedEntity<IPAddress> Ip { get; set; }
 
         public string Kind { get { return GetType().Name; } }
+
+        public long Visits { get; set; }
     }
 }
